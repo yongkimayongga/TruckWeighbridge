@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1073544820132",
+    "firebase_url": "https://truckweighbridge-f4b35-default-rtdb.firebaseio.com",
+    "project_id": "truckweighbridge-f4b35",
+    "storage_bucket": "truckweighbridge-f4b35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073544820132:android:f03bb0f17992944dc63d31",
+        "android_client_info": {
+          "package_name": "com.truck.weighbridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073544820132-ucbolk37sad13trg08qh8sgsmv3pd5be.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.truck.weighbridge",
+            "certificate_hash": "f613fd7a997b22bcd74a87b4516ea2a94e18a1c3"
+          }
+        },
+        {
+          "client_id": "1073544820132-08al5ut7dl03h09t0nd9l2o9f92s0p0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgym2MmfoWwy_IRATE9-1jIvguVoN77mk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073544820132-08al5ut7dl03h09t0nd9l2o9f92s0p0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

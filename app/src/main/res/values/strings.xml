@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Truck Weighbridge</string>
+
+    <string name="login_title">Wellcome To \n Truck Weighbridge App</string>
+    <string name="login_sub_title">**Please Sign In With Google Account**</string>
+    <string name="login_created_by">Created By : Yongki Mayongga</string>
+
+    <string name="sort_and_filter">Sort &amp; Filter</string>
+    <string name="sort_and_filter_based_on">Sort &amp; Filter Based On</string>
+    <string name="sort_a_to_z">A-Z</string>
+    <string name="sort_z_to_a">Z-A</string>
+    <string name="sort_closest_distance">Closest Distance</string>
+    <string name="sort_furthest_distance">Furthest Distance</string>
+    <string name="save_data">Save Data</string>
+    <string name="save_edited_data">Save Edited Data</string>
+
+    <string name="add_tooltip">Add Ticket Here…</string>
+    <string name="edit_tooltip">Edit Ticket Here…</string>
+    <string name="delete_tooltip">Swipe Right To Delete…</string>
+    <string name="sort_tooltip">Sort Data…</string>
+    <string name="filter_tooltip">Filter Data…</string>
+
+    <string name="sort_by">Sort By</string>
+    <string name="filter_by">Filter By</string>
+    <string name="apply">Apply</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+
+    <string name="btn_driver_name_asc">Driver Name A-Z</string>
+    <string name="btn_driver_name_desc">Driver Name Z-A</string>
+    <string name="btn_date_asc">Date from Oldest</string>
+    <string name="btn_date_desc">Date from Newest</string>
+    <string name="btn_license_number_asc">License Number From The Biggest</string>
+    <string name="btn_license_number_desc">License Number From The Smaller</string>
+
+    <string name="driver_name">Driver Name : </string>
+    <string name="license_number">License Number : </string>
+    <string name="date">Date : </string>
+    <string name="time">Time : </string>
+    <string name="inbound_tonnage">Inbound Tonnage (Ton): </string>
+    <string name="outbound_tonnage">Outbound Tonnage (Ton): </string>
+    <string name="net_weight">Net weight (Ton): </string>
+
+    <string name="license_number_hint">Please Input License Number…</string>
+    <string name="driver_name_hint">Please Input Driver Name…</string>
+    <string name="choose_date_hint">Please Choose Date…</string>
+    <string name="filter_reset_hint">Check to <b>Reset</b> data</string>
+    <string name="hint">............................................................</string>
+
+    <string name="logout">Logout</string>
+
+</resources>

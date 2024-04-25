@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_16">
+
+            <View
+                android:id="@+id/drag_indicator"
+                android:layout_width="38dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_24"
+                android:background="@drawable/bg_gray_collapse"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_24"
+                android:text="@string/filter_by"
+                android:textSize="@dimen/text_size_24"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/driver_name"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextInputLayoutHint"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.39">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_bg"
+                        android:hint="@string/driver_name_hint"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/height_2"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:text="@string/date"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/start_date_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_40">
+
+                    <TextView
+                        android:id="@+id/text_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_toStartOf="@+id/selected_date"
+                        android:gravity="center|start"
+                        android:hint="@string/license_number_hint"
+                        android:textColorHint="@color/colorTextInputLayoutHint"
+                        tools:text="05/06/2012" />
+
+                    <ImageView
+                        android:id="@+id/selected_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:paddingVertical="@dimen/height_2"
+                        app:srcCompat="@drawable/ic_calendar"
+                        app:tint="@color/colorScrim"
+                        tools:ignore="ContentDescription" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/colorBorder" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/height_2"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:layout_marginBottom="@dimen/margin_4"
+                    android:text="@string/license_number"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextInputLayoutHint"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.39">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_license"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_bg"
+                        android:hint="@string/license_number_hint"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorTextInputLayoutHint"
+                        android:textSize="@dimen/text_size_16" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <CheckBox
+                    android:id="@+id/check_reset"
+                    android:theme="@android:style/Theme.Holo.Light"
+                    android:layout_marginTop = "@dimen/margin_16"
+                    android:layout_marginBottom = "@dimen/margin_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_12"
+                    android:text="@string/filter_reset_hint"/>
+
+                <Button
+                    android:id="@+id/button_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:text="@string/apply"
+                    android:textAllCaps="false"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+                    app:layout_constraintStart_toStartOf="@+id/buttonLogin"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+                    app:strokeColor="@color/colorLightBlue"
+                    app:strokeWidth="@dimen/height_2" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

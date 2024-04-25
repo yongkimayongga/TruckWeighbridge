@@ -1,0 +1,86 @@
+[versions]
+agp = "8.3.2"
+kotlin = "1.9.0"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+mockk = "1.13.10"
+mockito = "2.25.0"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.7.0"
+activityCompose = "1.8.2"
+composeBom = "2023.08.00"
+googleServices = "4.4.1"
+navVersion = "2.5.0"
+firebaseDatabase = "20.3.1"
+firebaseAuth = "22.3.1"
+firebaseAnalytics = "21.6.2"
+dagger = "2.51.1"
+coordinatorlayout = "1.2.0"
+navigationFragment = "2.7.7"
+material = "1.11.0"
+playServicesAuth = "21.0.0"
+lifecycleExtensions = "2.2.0"
+lifecycleLivedataKtx = "2.7.0"
+kotlinxCoroutinesCore = "1.7.3"
+recyclerVersion = "1.3.2"
+roomRuntime = "2.6.1"
+roomKtx = "2.6.1"
+roomCompiler = "2.6.1"
+lottieVersion = "3.4.0"
+databindingRuntime = "8.3.2"
+junitKtx = "1.1.5"
+junitExt = "1.1.5"
+core-testing = "2.2.0"
+runner = "1.5.2"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockito-android = { group = "org.mockito", name = "mockito-android", version.ref = "mockito" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "core-testing" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
+navigation-version = { group = "androidx.navigation", name = "navigation-safe-args-gradle-plugin", version.ref = "navVersion" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics", version.ref = "firebaseAnalytics" }
+dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
+dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
+dagger-android = { group = "com.google.dagger", name = "dagger-android", version.ref = "dagger" }
+dagger-android-support = { group = "com.google.dagger", name = "dagger-android-support", version.ref = "dagger" }
+dagger-android-processor = { group = "com.google.dagger", name = "dagger-android-processor", version.ref = "dagger" }
+androidx-coordinatorlayout = { group = "androidx.coordinatorlayout", name = "coordinatorlayout", version.ref = "coordinatorlayout" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragment" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationFragment" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" }
+lifecycle-extensions = { group = "androidx.lifecycle", name = "lifecycle-extensions", version.ref = "lifecycleExtensions" }
+lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerVersion" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomRuntime" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottieVersion" }
+androidx-databinding-runtime = { group = "androidx.databinding", name = "databinding-runtime", version.ref = "databindingRuntime" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
+androidx-junit-ext = { group = "androidx.test.ext", name = "junit", version.ref = "junitExt" }
+androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
